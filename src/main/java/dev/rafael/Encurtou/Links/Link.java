@@ -14,10 +14,10 @@ public class Link {
 	private Long id;
 	private String urlOriginal;
 	private String urlEncurtada;
-	private LocalDateTime urlCridaEm;
+	private LocalDateTime urlCriadaEm;
 
-	public Link(LocalDateTime urlCridaEm, String urlEncurtada, String urlOriginal, Long id) {
-		this.urlCridaEm = urlCridaEm;
+	public Link(LocalDateTime urlCriadaEm, String urlEncurtada, String urlOriginal, Long id) {
+		this.urlCriadaEm = urlCriadaEm;
 		this.urlEncurtada = urlEncurtada;
 		this.urlOriginal = urlOriginal;
 		this.id = id;
@@ -36,11 +36,11 @@ public class Link {
 	}
 
 	public LocalDateTime getUrlCridaEm() {
-		return urlCridaEm;
+		return urlCriadaEm;
 	}
 
 	public void setUrlCridaEm(LocalDateTime urlCridaEm) {
-		this.urlCridaEm = urlCridaEm;
+		this.urlCriadaEm = urlCridaEm;
 	}
 
 	public String getUrlOriginal() {
