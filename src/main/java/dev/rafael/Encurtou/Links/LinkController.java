@@ -22,6 +22,7 @@ public class LinkController {
 		String urlOriginal = request.get("urlOriginal");
 		Link link = linkService.encurtarUrl(urlOriginal);
 
+		//O Link também tem que ser entre " "
 		String gerarUrldeRedirecionamentoDoUsuario = "http://localhost:8080/" + link.getUrlEncurtada();
 
 		LinkResponse response = new LinkResponse(

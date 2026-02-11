@@ -16,7 +16,7 @@ public class LinkService {
 
 	//Gera url aleatória:
 	public String gerarUrlAleatoria(){
-		return RandomStringUtils.randomAlphanumeric(5,10);
+		return RandomStringUtils.insecure().nextAlphanumeric(5, 10);
 	}
 
 	public Link encurtarUrl(String urlOriginal){
